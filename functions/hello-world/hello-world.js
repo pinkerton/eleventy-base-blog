@@ -11,7 +11,7 @@ const handler = async (event) => {
       return {
         statusCode: 403,
         body: JSON.stringify({ error: true, name: 'Null' }),
-        headers: {'Content-Type', 'application/json'},
+        headers: {'Content-Type': 'application/json'},
       }
     } else {
       console.log("Successfully located user")
