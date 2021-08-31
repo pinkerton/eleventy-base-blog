@@ -18,7 +18,7 @@ const handler = async (event) => {
       return {
         statusCode: 200,
         body: JSON.stringify({ err: false, name: 'John Doe' }),
-        headers: {'Content-Type', 'application/json'},
+        headers: {'Content-Type': 'application/json'},
       }
     }
 }
